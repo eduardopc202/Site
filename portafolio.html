@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio CV</title>
+    <link rel="shortcut icon" href="media/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link href="css/css-gg.css" rel="stylesheet" />
+    <script src="js/site.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="media/PECO.jpg" id="photo-profile" class="my-photo" />
+                <div>
+                    <h1 class="title">Eduardo Peña</h1>
+                    <div class="badge-profile">Desarrollador en programación web</div>
+                    <div class="social">
+                        <a href="https://www.facebook.com/share/1H7MPS9hDe/" target="_blank"><i class="gg-facebook"></i></a>
+                        <a href="https://github.com/eduardopc202" target="_blank"><i class="gg-git-branch"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item">
+                            <i class="gg-calendar"></i> 11 de agosto del 20004
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-pin"></i> Puebla, Puebla
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-mail"></i><a>edcp9092@gmail.com</a>
+                        </li>
+                        <li class="contacts-block-item">
+                            <i class="gg-phone"></i>2215733166</li>
+                    </ul>
+                    <a class="btn" href="media/CV_UTP0154435_Peña Corona Eduardo.pdf">Descargar CV</a>
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <!-- Menú -->
+            <header>
+                <div class="menu-circle">
+                    <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="index.html">Acerca de</a></li>
+                        <li class="nav-item"><a href="#portfolio">Portafolio</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div id="portfolio">
+                <h2 class="title bordered">Portafolio</h2>
+                <div class="portfolio">
+                    <img src="media/CERTIFACADO_Relacion.png" onclick="showImage(this)">
+                    <img src="media/NUBES.png" onclick="showImage(this)">
+                    <img src="media/UNI.jpg" onclick="showImage(this)">
+                    <img src="media/PREPA.jpg" onclick="showImage(this)">
+                </div>
+
+                <div class="modal" id="preview">
+                    <button class="close-modal" onclick="cerrarModal()"><i class="gg-close"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        Eduardo Peña Corona
+    </footer>
+</body>
+
+</html>
